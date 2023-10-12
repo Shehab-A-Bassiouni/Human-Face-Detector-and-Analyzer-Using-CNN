@@ -1,0 +1,32 @@
+{% extends 'layout.html' %} {% block content %}
+        <div id="loading2">
+          <div class="spinner"></div>
+          <p>Predicting...</p>
+        </div>
+
+<div class="container divS">
+  <div class="row">
+    <div class="col-sm-12 col-md-6">
+      <div class="my-div">
+        <br>
+        <h1>Gender : {{data.Gender}}</h1>
+        <br>
+
+        <h1>Age : {{data.Age}}</h1>
+        <br>
+
+        <h1>Ethnicity : {{data.Ethnicity}}</h1>
+        <br>
+
+        <h1>Emotion : {{data.Emotions}}</h1>
+      </div>
+      <div>
+        <img src="../static/images/{{filename}}" alt="A beautiful image" class="imageMain img-fluid rounded">
+      </div>
+      <a class="btn btn-primary clostBtn" href="home" onclick="Applying('/')">Close </a>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}

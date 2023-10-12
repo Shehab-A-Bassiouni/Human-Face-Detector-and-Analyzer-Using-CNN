@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}{% block content %}
+    <header class="masthead">
+      <div class="container px-4 px-lg-5 d-flex flex-column justify-content-center">
+        <div class="text-center">
+          <h1 class="mx-auto my-0 text-uppercase txt1">Gray Scale</h1>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5">
+            AI to Predict your Gender, Age, Ethnicity and Emotions by facial
+            image.
+          </h2>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+          <form method="post" enctype="multipart/form-data" action="/upload" class="col-12 col-md-6">
+            <div class="input-group">
+              <input type="file" class="form-control" name="photo" />
+              <button class="btn btn-primary" type="submit" id="buttonHome">Upload</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    
+{% endblock %}
